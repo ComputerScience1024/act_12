@@ -33,7 +33,7 @@ class InventoryHomePage extends StatefulWidget {
 
 class _InventoryHomePageState extends State<InventoryHomePage> {
   final CollectionReference inventory =
-      FirebaseFirestore.instance.collection('inventory');
+      FirebaseFirestore.instance.collection('items');
 
   Future<void> _addInventoryItem() async {
     TextEditingController nameController = TextEditingController();
